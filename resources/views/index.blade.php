@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>My Portfolio</title>
+  <title>KTOURS</title>
   <!-- MDB icon -->
-  <link rel="icon" href="https://lh3.googleusercontent.com/a-/AAuE7mA0HA30RztANlIRbIuYJ2PNpUlfl7Jr_pnzL7vzlw=s96-cc-rg" type="image/x-icon">
+  <link rel="icon" href="" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- offline fontawesome link -->
@@ -130,7 +130,7 @@
               </a>
             </li>
           </ul>
-        </div>
+        < /div>
 
       </div>
     </nav>
@@ -324,11 +324,10 @@
           </li>
           <li class="">
             <a href="" class="nav-link waves-effect" target="_blank">
-              <i class="fab fa-twitter"> Twiiter</i>
+              <i class="fab fa-twitter"> Twitter</i>
             </a>
           </li>
         </ul>
-
       </div>
       <!-- Grid column -->
 
@@ -340,8 +339,19 @@
         <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-        <ul class="list-unstyled">
-        </ul>
+        <form class="form " action="">
+          <!-- Material input -->
+        <div class="md-form">
+          <i class="fas fa-lock prefix"></i>
+          <input type="password" id="inputValidationEx2" class="form-control validate">
+          <label for="inputValidationEx2" data-error="wrong" data-success="right">Type your password</label>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-info btn-rounded waves-effect mx-auto"><i class="fas fa-envelope pr-2"
+            aria-hidden="true"></i>Subscribe to our news letter</button> 
+        </div>
+          
+        </form>
 
       </div>
       <!-- Grid column -->
@@ -353,7 +363,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <div class="footer-copyright text-center py-3">© <?=date('Y')." "  ?>Copyright:
     <a href=""> KTOURS</a>
   </div>
   <!-- Copyright -->
