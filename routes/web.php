@@ -19,3 +19,6 @@ Route::get('/laravel', function () {
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/events', function () {
+    return view('events');
+});

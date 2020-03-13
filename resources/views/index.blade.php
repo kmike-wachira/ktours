@@ -8,9 +8,9 @@
   <!-- MDB icon -->
   <link rel="icon" href="" type="image/x-icon">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> --}}
   <!-- offline fontawesome link -->
-  <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.css"> -->
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css"> 
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
@@ -87,7 +87,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar  fixed-top  p-4" style="background-color:#232F60;">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="/mdb" target="_blank">
+        <a class="navbar-brand waves-effect" href="/" target="_blank">
           <strong class="white-text">KTOURS</strong>
         </a>
 
@@ -103,17 +103,16 @@
           <!-- Left -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#events" target="_blank">Events</a>
+              <a class="nav-link waves-effect" href="/events" >Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="/about"
-                target="_blank">About us</a>
+              <a class="nav-link waves-effect" href="/about">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="/hotels" target="_blank">Restaurants</a>
+              <a class="nav-link waves-effect" href="/hotels">Restaurants</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="/contact" target="_blank">Contact us</a>
+              <a class="nav-link waves-effect" href="/contact">Contact us</a>
             </li>
           </ul>
 
@@ -130,8 +129,7 @@
               </a>
             </li>
           </ul>
-        < /div>
-
+        </div>
       </div>
     </nav>
     <!-- Navbar -->
@@ -151,8 +149,9 @@
       </div>
     </div>
   </div>
+  lo
   <div class="container-fluid text-center p-3">
-     <div class="m-auto white-text p-2" style="width:60%;background-color:#401A94"> <h1><i> Upcoming Events </i></h1> </div>
+    <div class="m-auto white-text p-4" style="width:80%;background-color:#401A94"> <h1><i> Upcoming events </i></h1> </div>
   </div>
   <div class="container-fluid">
      <div class="row m-2">
@@ -164,11 +163,12 @@
           <div class="m-3 p-1" style="transform:rotate(-40deg);width:60px;border-radius:5px;background-color:#27A2A2">New</div>
         </div>         
       </div>
-       <div class="col-lg-4 col-md-12 col-xs-12 ">
+      <div class="col-lg-4 col-md-12 col-xs-12 ">
         <div class="m-auto text-center card" style="width:350px;background-color:lightgrey">
          <h4> <u>1 day tour to kit mikayi</u> </h4>
           <p>An upcoming event to the famous kit mikayi(Crying stone) in Western Province Kenya to happen.The event will happen on 28 <sup>th</sup> March 2018  kit mikayi(Crying stone) in Western Province Kenya</p>
           <button class="btn white-text mx-auto mb-4" style="background-color:#2A079F;border-radius:20px;width:200px">Read More</button>
+          <div class="m-3 p-1" style="transform:rotate(-40deg);width:60px;border-radius:5px;background-color:#27A2A2">New</div>
         </div>         
       </div>
       <div class="col-lg-4 col-md-12 col-xs-12 ">
@@ -176,6 +176,7 @@
          <h4> <u>1 day tour to kit mikayi</u> </h4>
           <p>An upcoming event to the famous kit mikayi(Crying stone) in Western Province Kenya to happen.The event will happen on 28 <sup>th</sup> March 2018  kit mikayi(Crying stone) in Western Province Kenya</p>
           <button class="btn white-text mx-auto mb-4" style="background-color:#2A079F;border-radius:20px;width:200px">Read More</button>
+          <div class="m-3 p-1" style="transform:rotate(-40deg);width:60px;border-radius:5px;background-color:#27A2A2">New</div>
         </div>         
       </div>
        
