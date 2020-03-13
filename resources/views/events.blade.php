@@ -29,13 +29,12 @@
   </head>
   <body>
     <!--Main Navigation-->
-  <header>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar  fixed-top  p-4" style="background-color:#232F60;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#232F60;">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="/" target="_blank">
+        <a class="navbar-brand waves-effect p-4" href="/" >
           <strong class="white-text">KTOURS</strong>
         </a>
 
@@ -81,75 +80,73 @@
       </div>
     </nav>
     <!-- Navbar -->
-
-  </header>
   <!--Main Navigation-->
 
   <div class="container" style="margin-top:100px">
-    <div class="row ">
-      <div class="col-lg-6 ">
-      <!--Carousel Wrapper-->
-    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-2" data-slide-to="1"></li>
-      <li data-target="#carousel-example-2" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <div class="view">
-          <img class="d-block w-100" src="assets/img/1.jpg"
-            alt="First slide">
-          <div class="mask rgba-black-light"></div>
-        </div>
-        <div class="carousel-caption">
-          <h3 class="h3-responsive">Light mask</h3>
-          <p>First text</p>
-        </div>
+   <div class="row">
+    <div class="col-lg-6  col-md-6 col-sm-12">
+          <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="view">
+                <img class="d-block w-100" src="assets/img/1.jpg"
+                  alt="First slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Light mask</h3>
+                <p>First text</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block w-100" src="assets/img/2.jpg"
+                  alt="Second slide">
+                <div class="mask rgba-black-strong"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Strong mask</h3>
+                <p>Secondary text</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block w-100" src="assets/img/8..jpg"
+                  alt="Third slide">
+                <div class="mask rgba-black-slight"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Slight mask</h3>
+                <p>Third text</p>
+              </div>
+            </div>
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        <!--/.Controls-->
       </div>
-      <div class="carousel-item">
-        <!--Mask color-->
-        <div class="view">
-          <img class="d-block w-100" src="assets/img/2.jpg"
-            alt="Second slide">
-          <div class="mask rgba-black-strong"></div>
-        </div>
-        <div class="carousel-caption">
-          <h3 class="h3-responsive">Strong mask</h3>
-          <p>Secondary text</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <!--Mask color-->
-        <div class="view">
-          <img class="d-block w-100" src="assets/img/8..jpg"
-            alt="Third slide">
-          <div class="mask rgba-black-slight"></div>
-        </div>
-        <div class="carousel-caption">
-          <h3 class="h3-responsive">Slight mask</h3>
-          <p>Third text</p>
-        </div>
-      </div>
-    </div>
-    <!--/.Slides-->
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
-  </div>
   <!--/.Carousel Wrapper-->
       </div>
-      <div class="col-lg-6 " style="background-color:#131B61;">
+      <div class="col-lg-6 col-md-6 col-sm-12 " style="background-color:#131B61;">
         <ul class="list-group " >
             <li class="list-group-item active  text-center" style="background-color:navy">
               <div class="md-v-line "></div><i class=""></i>Event Name
@@ -170,7 +167,7 @@
       </div>
     </div>
   </div>
-  <div class="container m-5">
+  <div class="container mt-5">
      <h1>What the event contains.</h1>
      <div>
        <ul>
@@ -189,8 +186,10 @@
        </ul>
      </div>
      <div class="text-center">
-       <h4>Brief Descrption</h4>
-       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium natus voluptate mollitia architecto reiciendis amet modi quibusdam quis alias non recusandae cum consectetur labore officiis doloremque, doloribus quas qui!</p>
+       <h4>Brief Description</h4>
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium natus voluptate mollitia 
+         architecto reiciendis amet modi quibusdam quis alias non recusandae cum consectetur labore officiis 
+         doloremque, doloribus quas qui!</p>
       </div>
   </div>
   <div class="container text-center">
