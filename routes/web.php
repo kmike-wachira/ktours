@@ -22,6 +22,9 @@ Route::get('/events/{id}','EventsController@show')->name('show');
 Route::get('/contact', function () {
     return view('contact');
 });
+// Route::get('/laravel', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
