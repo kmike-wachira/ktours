@@ -73,13 +73,13 @@
                   <div class="md-v-line"></div><i class="fas fa-calendar mr-5"></i>{{$event->event_date}}
                 </li>
                 <li class="list-group-item">
-                  <div class="md-v-line"></div><i class="fas fa-location mr-5"></i>{{$eventid->venue_name}}
+                  <div class="md-v-line"></div><i class="fas fa-map-marker mr-5"></i>{{$eventid->venue_name}}
                 </li>
                 <li class="list-group-item">
-                  <div class="md-v-line"></div><i class="far fa-gem mr-5"></i>{{$event->price}}
+                  <div class="md-v-line"></div><i class="fas fa-dollar-sign mr-5"></i>{{$event->price}}
                 </li>
                 <li class="list-group-item">
-                  <div class="md-v-line"></div><i class="fas fa-time mr-5"></i>{{$event->duration}}
+                  <div class="md-v-line"></div><i class="fas fa-clock mr-5"></i>{{$event->duration}}
                 </li>
               </ul>
           </div>
@@ -89,18 +89,13 @@
         <h1>What the event contains.</h1>
         <div>
           <ul>
+            @foreach ($eventname as $activity)
             <li>
-              Add an activity here.
-            </li>
-            <li>
-              Add an activity here.
-            </li> 
-            <li>
-              Add an activity here.
-            </li>
-            <li>
-              Add an activity here.
-            </li>
+              {{ $activity->name }}
+            </li>  
+            @endforeach
+           
+         
           </ul>
         </div>
         <div class="text-center">

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\activites;
 use App\events;
 use App\eventVenues;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EventsController extends Controller
 {
@@ -50,10 +52,20 @@ class EventsController extends Controller
      */
     public function show($id)
     {
+        // get data from events table where id  is equals $id
         $event=events::find($id);
+        // create variable pos to hold the value of event event id
         $pos=$event->venue;
+        // get data from events venues table where id  is equals $pos
         $eventid=eventVenues::find($pos);
-        return view('events',compact('event','eventid'));
+        // get data from activities table where event id =$id  using DB
+        $eventname=DB::table('activites')->select('name')
+        ->join('event_activities','event_activities.activity_id', '=', 'activites.id')        
+        ->where('event_activities.event_id',$id )->get();
+        //  return print_r($eventname);
+        
+
+        return view('events',compact('event','eventid','eventname'));
     }
 
     /**
