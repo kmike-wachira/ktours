@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/events', function () {
-    return view('events');
-});
+Route::get('/','EventsController@index');
+Route::get('/events/{id}','EventsController@show')->name('show');
+
+// Route::get('/events', function () {
+//     return view('events');
+// });
 Route::get('/contact', function () {
     return view('contact');
 });

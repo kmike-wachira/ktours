@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\events;
+use App\eventVenues;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
@@ -13,18 +15,21 @@ class EventsController extends Controller
      */
     public function index()
     {
-        //
+        $events= events::all();
+        return view('index',compact('events'));
+
     }
+    
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -32,10 +37,10 @@ class EventsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+    // public function store(Request $request)
+    // {
+    //     //
+    // }
 
     /**
      * Display the specified resource.
@@ -45,7 +50,10 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        //
+        $event=events::find($id);
+        $pos=$event->venue;
+        $eventid=eventVenues::find($pos);
+        return view('events',compact('event','eventid'));
     }
 
     /**
@@ -54,10 +62,10 @@ class EventsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+    // public function edit($id)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -66,10 +74,10 @@ class EventsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+    // public function update(Request $request, $id)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -77,8 +85,8 @@ class EventsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
-    }
+    // public function destroy($id)
+    // {
+    //     //
+    // }
 }

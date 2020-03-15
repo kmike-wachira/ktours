@@ -16,7 +16,7 @@
               <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                   <div class="view">
-                    <img class="d-block w-100" src="styling/img/1.jpg"
+                    <img class="d-block w-100" src="{{ asset('styling/img/1.jpg') }}"
                       alt="First slide">
                     <div class="mask rgba-black-light"></div>
                   </div>
@@ -28,7 +28,7 @@
                 <div class="carousel-item">
                   <!--Mask color-->
                   <div class="view">
-                    <img class="d-block w-100" src="styling/img/2.jpg"
+                    <img class="d-block w-100" src="{{ asset('styling/img/2.jpg') }}"
                       alt="Second slide">
                     <div class="mask rgba-black-strong"></div>
                   </div>
@@ -40,7 +40,7 @@
                 <div class="carousel-item">
                   <!--Mask color-->
                   <div class="view">
-                    <img class="d-block w-100" src="styling/img/8..jpg"
+                    <img class="d-block w-100" src="{{ asset('styling/img/8..jpg') }}"
                       alt="Third slide">
                     <div class="mask rgba-black-slight"></div>
                   </div>
@@ -67,19 +67,19 @@
           <div class="col-lg-6 col-md-6 col-sm-12 " style="background-color:#131B61;">
             <ul class="list-group " >
                 <li class="list-group-item active  text-center" style="background-color:navy">
-                  <div class="md-v-line "></div><i class=""></i>Event Name
+                  <div class="md-v-line "></div><i class=""></i>{{$event->title}}
                 </li>
                 <li class="list-group-item">
-                  <div class="md-v-line"></div><i class="fas fa-calendar mr-5"></i><?=date('d/m/Y')?>
+                  <div class="md-v-line"></div><i class="fas fa-calendar mr-5"></i>{{$event->event_date}}
                 </li>
                 <li class="list-group-item">
-                  <div class="md-v-line"></div><i class="fas fa-location mr-5"></i>Venue Kisumu
+                  <div class="md-v-line"></div><i class="fas fa-location mr-5"></i>{{$eventid->venue_name}}
                 </li>
                 <li class="list-group-item">
-                  <div class="md-v-line"></div><i class="far fa-gem mr-5"></i>Price :$200
+                  <div class="md-v-line"></div><i class="far fa-gem mr-5"></i>{{$event->price}}
                 </li>
                 <li class="list-group-item">
-                  <div class="md-v-line"></div><i class="fas fa-time mr-5"></i>Duration 24hrs
+                  <div class="md-v-line"></div><i class="fas fa-time mr-5"></i>{{$event->duration}}
                 </li>
               </ul>
           </div>
@@ -105,9 +105,7 @@
         </div>
         <div class="text-center">
           <h4>Brief Description</h4>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium natus voluptate mollitia 
-            architecto reiciendis amet modi quibusdam quis alias non recusandae cum consectetur labore officiis 
-            doloremque, doloribus quas qui!</p>
+          <p>{{ $event->description }}</p>
           </div>
       </div>
       <div class="container text-center">
