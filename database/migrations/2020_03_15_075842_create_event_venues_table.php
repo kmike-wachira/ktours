@@ -16,7 +16,7 @@ class CreateEventVenuesTable extends Migration
         Schema::create('event_venues', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('venue_name');
-            $table->string('description');
+            $table->longText('description');
         });
     }
 
