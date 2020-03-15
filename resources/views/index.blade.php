@@ -16,7 +16,7 @@
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <div class="view">
-                <img class="d-block w-100" src="assets/img/1.jpg"
+                <img class="d-block w-100" src="styling/img/1.jpg"
                   alt="First slide">
                 <div class="mask rgba-black-light"></div>
               </div>
@@ -28,7 +28,7 @@
             <div class="carousel-item">
               <!--Mask color-->
               <div class="view">
-                <img class="d-block w-100" src="assets/img/2.jpg"
+                <img class="d-block w-100" src="styling/img/2.jpg"
                   alt="Second slide">
                 <div class="mask rgba-black-strong"></div>
               </div>
@@ -40,7 +40,7 @@
             <div class="carousel-item">
               <!--Mask color-->
               <div class="view">
-                <img class="d-block w-100" src="assets/img/8..jpg"
+                <img class="d-block w-100" src="styling/img/8..jpg"
                   alt="Third slide">
                 <div class="mask rgba-black-slight"></div>
               </div>
@@ -117,7 +117,7 @@
      <div class="col-lg-4 col-md-12 col-sm-12 mb-5">
        <div class="m-auto text-center card" style="width:100%;background-color:lightgrey">
         <div>
-          <img class="mx-auto" src="assets/img/8..jpg" alt="" width="150" height="150" style="border-radius:50%;margin-top:-40px;"><br>
+          <img class="mx-auto" src="styling/img/8..jpg" alt="" width="150" height="150" style="border-radius:50%;margin-top:-40px;"><br>
         </div>
         <h4> <u>1 day tour to kit mikayi</u> </h4>
          <p>An upcoming event to the famous kit mikayi(Crying stone) in Western Province Kenya to happen.The event will happen on 28 <sup>th</sup> March 2018  kit mikayi(Crying stone) in Western Province Kenya</p>
@@ -126,7 +126,7 @@
      <div class="col-lg-4 col-md-12 col-sm-12 mb-5 ">
       <div class="m-auto text-center card" style="width:100%;background-color:lightgrey">
        <div>
-         <img class="mx-auto" src="assets/img/8..jpg" alt="" width="150" height="150" style="border-radius:50%;margin-top:-40px;"><br>
+         <img class="mx-auto" src="styling/img/8..jpg" alt="" width="150" height="150" style="border-radius:50%;margin-top:-40px;"><br>
        </div>
        <h4> <u>1 day tour to kit mikayi</u> </h4>
         <p>An upcoming event to the famous kit mikayi(Crying stone) in Western Province Kenya to happen.The event will happen on 28 <sup>th</sup> March 2018  kit mikayi(Crying stone) in Western Province Kenya</p>
@@ -135,7 +135,7 @@
     <div class="col-lg-4 col-md-12 col-sm-12 mb-5">
       <div class="m-auto text-center card" style="width:100%;background-color:lightgrey">
        <div>
-         <img class="mx-auto" src="assets/img/8..jpg" alt="" width="150" height="150" style="border-radius:50%;margin-top:-40px;"><br>
+         <img class="mx-auto" src="styling/img/8..jpg" alt="" width="150" height="150" style="border-radius:50%;margin-top:-40px;"><br>
        </div>
        <h4> <u>1 day tour to kit mikayi</u> </h4>
         <p>An upcoming event to the famous kit mikayi(Crying stone) in Western Province Kenya to happen.The event will happen on 28 <sup>th</sup> March 2018  kit mikayi(Crying stone) in Western Province Kenya</p>
@@ -150,7 +150,7 @@
    <div class="row">
      <div class="col-lg-3 col-md-6 col-sm-12 mb-5 ">
       <div class="container1">
-        <img src="assets/img/8..jpg" alt="Avatar" class="image1">
+        <img src="styling/img/8..jpg" alt="Avatar" class="image1">
         <div class="text-block">
           <h4  class="text-uppercase ">Team building/hiking</h4>
         </div>
@@ -164,7 +164,7 @@
      </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-5 ">
       <div class="container1">
-        <img src="assets/img/8..jpg" alt="Avatar" class="image1">
+        <img src="styling/img/8..jpg" alt="Avatar" class="image1">
         <div class="text-block">
           <h4 class="text-uppercase ">Travel with us. </h4>
         </div>
@@ -177,7 +177,7 @@
      </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-5 ">
       <div class="container1">
-        <img src="assets/img/8..jpg" alt="Avatar" class="image1">
+        <img src="styling/img/8..jpg" alt="Avatar" class="image1">
         <div class="text-block">
           <h4>CAR HIRE AND RENTAL</h4>
         </div>
@@ -190,7 +190,7 @@
      </div>
      <div class="col-lg-3 col-md-6 col-sm-12 mb-5 ">
       <div class="container1">
-        <img src="assets/img/8..jpg" alt="Avatar" class="image1">
+        <img src="styling/img/8..jpg" alt="Avatar" class="image1">
         <div class="text-block">
           <h4>HOTEL BOOKINGS</h4>
         </div>

@@ -1,5 +1,5 @@
 @extends('layouts.main')
-  @section('name')
+  @section('body')
     <div class="container" style="margin-top:100px">
       <div class="row">
         <div class="col-lg-6  col-md-6 col-sm-12">
@@ -16,7 +16,7 @@
               <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                   <div class="view">
-                    <img class="d-block w-100" src="assets/img/1.jpg"
+                    <img class="d-block w-100" src="styling/img/1.jpg"
                       alt="First slide">
                     <div class="mask rgba-black-light"></div>
                   </div>
@@ -28,7 +28,7 @@
                 <div class="carousel-item">
                   <!--Mask color-->
                   <div class="view">
-                    <img class="d-block w-100" src="assets/img/2.jpg"
+                    <img class="d-block w-100" src="styling/img/2.jpg"
                       alt="Second slide">
                     <div class="mask rgba-black-strong"></div>
                   </div>
@@ -40,7 +40,7 @@
                 <div class="carousel-item">
                   <!--Mask color-->
                   <div class="view">
-                    <img class="d-block w-100" src="assets/img/8..jpg"
+                    <img class="d-block w-100" src="styling/img/8..jpg"
                       alt="Third slide">
                     <div class="mask rgba-black-slight"></div>
                   </div>
