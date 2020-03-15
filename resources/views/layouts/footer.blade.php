@@ -64,9 +64,9 @@
           <form class="form " action="">
             <!-- Material input -->
           <div class="md-form">
-            <i class="fas fa-lock prefix"></i>
             <input type="email" id="inputValidationEx2" class="form-control validate">
-            <label for="inputValidationEx2" data-error="wrong" data-success="right">Type your email</label>
+            <label for="inputValidationEx2" data-error="wrong" data-success="right"> 
+              <i class="fa fa-envelope fa-1x" aria-hidden="true">Type your email</i></label>
           </div>
           <div class="text-center">
             <button type="submit" class="btn btn-outline-info btn-rounded waves-effect mx-auto"><i class="fas fa-envelope pr-2"
