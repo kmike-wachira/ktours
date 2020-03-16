@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\activites;
 use App\events;
 use App\eventVenues;
+use App\Testimonials;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,8 +18,11 @@ class EventsController extends Controller
      */
     public function index()
     {
-        $events= events::all();
-        return view('index',compact('events'));
+        $events= events::paginate(3);
+        // $testimonials=Testimonials::all();
+        $testimonials=DB::table('users')->select('name','testimonials.testimonial')->join('testimonials','testimonials.uploaded_by','=','users.id')->limit(3)->get();
+        return view('index',compact('events','testimonials'));
+        // print_r($user);
 
     }
     
@@ -63,6 +67,7 @@ class EventsController extends Controller
         ->join('event_activities','event_activities.activity_id', '=', 'activites.id')        
         ->where('event_activities.event_id',$id )->get();
         //  return print_r($eventname);
+        $testimonials=Testimonials::all();
         
 
         return view('events',compact('event','eventid','eventname'));

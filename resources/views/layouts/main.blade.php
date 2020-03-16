@@ -14,7 +14,7 @@
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="{{ asset('styling/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('styling/css/bootstrap.min.css') }}" media="screen">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="{{ asset('styling/css/mdb.min.css') }}">
   <!-- Your custom styles (optional) -->
