@@ -17,9 +17,9 @@
   
             <!-- Left -->
             <ul class="navbar-nav mr-auto">
-              {{-- <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link waves-effect" href="/events" >Events</a>
-              </li> --}}
+              </li>
               <li class="nav-item">
                 <a class="nav-link waves-effect" href="/about">About us</a>
               </li>

@@ -25,6 +25,11 @@ class EventsController extends Controller
         // print_r($user);
 
     }
+    public function allEvents()
+    {
+        $events = events::paginate(3);
+        return view('allevents' ,compact('events'));
+    }
     
 
     /**

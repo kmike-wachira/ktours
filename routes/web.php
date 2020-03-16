@@ -26,6 +26,7 @@ Route::get('/contact', function () {
 //     return view('welcome');
 // });
 
+Route::get('/events','EventsController@allEvents');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
