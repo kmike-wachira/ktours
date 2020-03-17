@@ -26,13 +26,7 @@
   }
   .caro-image{
     height: 550px;
-  }
-  @media screen and (max-width:500px){
-   .caro-image{
-     height: 200px;
-   }
-  }
-  
+  }  
   .text1 {
     color: white;
     font-size: 20px;
@@ -56,5 +50,26 @@
     
   }
   .mtop{
-    margin-top: 100px;
+    margin-top: 95px;
   }
+  .holder{
+    padding:35px;
+
+  }
+  .holder-text{
+    padding:20px;
+    width:80%;
+    background-color:#401A94;
+    font-size: xx-large;
+  }
+  @media screen and (max-width:500px){
+    .caro-image{
+      height: 200px;
+    }
+    .holder-text{
+    width:100%;
+
+     padding:20px;
+     font-size: 24px;
+   }
+   }
