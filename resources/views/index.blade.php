@@ -62,8 +62,8 @@
     </div>
   </div>
 
-  <div class="container-fluid text-center p-3">
-    <div class="m-auto white-text p-4" style="width:80%;background-color:#401A94"> <h1><i> Upcoming events </i></h1> </div>
+  <div class="container-fluid holder text-center">
+    <div class="m-auto white-text holder-text "> <p><i> Upcoming events </i></p> </div>
   </div>
   <div class="container-fluid">
      <div class="row ">
@@ -79,8 +79,8 @@
        @endforeach
      </div>
   </div>
-  <div class="container-fluid text-center my-5">
-    <div class="m-auto white-text p-4" style="width:80%;background-color:#401A94"> <h1><i> What do our clients have to say? </i></h1> </div>
+  <div class="container-fluid holder text-center">
+    <div class="m-auto white-text holder-text "> <p><i> What our clients say? </i></p> </div>
   </div>
   <div class="container-fluid mt-5">
     <div class="row m-2">
@@ -97,8 +97,8 @@
       @endforeach
     </div>
  </div>
- <div class="container-fluid text-center my-5">
-  <div class="m-auto white-text p-4" style="width:80%;background-color:#401A94"> <h1><i> What we offer </i></h1> </div>
+ <div class="container-fluid holder text-center">
+  <div class="m-auto white-text holder-text "> <p><strong>Our  Patners </strong></p> </div>
 </div>
 <div class="container-fluid mb-5">
    <div class="row">
@@ -106,12 +106,12 @@
       <div class="container1">
         <img src="{{ asset('styling/img/8..jpg') }}" alt="Avatar" class="image1">
         <div class="text-block">
-          <h4  class="text-uppercase ">Team building/hiking</h4>
+          <h4  class="text-uppercase ">JD DESIGNS</h4>
         </div>
         <div class="overlay1">
           <div class="text1">
-          <p>Join our hikes and team building activities to make lifetime memories</p> 
-          <button class="btn btn-info">Join Activity</button>
+          <p>The Biggest and upcoming Design company in videography and photography. </p> 
+          <button class="btn btn-info"> <a class="text-white" href="tel:0790964507"> Contact</a> </button>
           </div>
         </div>
       </div>
@@ -120,11 +120,11 @@
       <div class="container1">
         <img src="{{ asset('styling/img/8..jpg') }}" alt="Avatar" class="image1">
         <div class="text-block">
-          <h4 class="text-uppercase ">Travel with us. </h4>
+          <h4 class="text-uppercase ">Whizzy Ent </h4>
         </div>
         <div class="overlay1">
-          <div class="text1">Join our planned tours and fun activities for the best activities.Come share the moments.
-          <button class="btn btn-info">Join now</button>
+          <div class="text1">An entertainment company witn the best and great DJ's and Awesome sound systems
+          <button class="btn btn-info"> <a class="text-white" href="tel:0790964507"> Contact</a> </button>
         </div>
         </div>
       </div>
@@ -133,11 +133,11 @@
       <div class="container1">
         <img src="{{ asset('styling/img/8..jpg') }}" alt="Avatar" class="image1">
         <div class="text-block">
-          <h4>CAR HIRE AND RENTAL</h4>
+          <h4 class="text-uppercase ">Maja Empire</h4>
         </div>
         <div class="overlay1">
-          <div class="text1"> <p>Hire at a very pocket friendly price and with the best offers.</p> 
-            <button class="btn btn-info">Hire</button>
+          <div class="text1"> <p>A car hire industry .Best SUV's and 4WD drives for your events </p> 
+            <button class="btn btn-info"> <a class="text-white" href="tel:0790964507"> Contact</a> </button>
           </div>
         </div>
       </div>
@@ -146,12 +146,11 @@
       <div class="container1">
         <img src="{{ asset('styling/img/8..jpg') }}" alt="Avatar" class="image1">
         <div class="text-block">
-          <h4>HOTEL BOOKINGS</h4>
+          <h4 class="text-uppercase ">GEE EVENTS</h4>
         </div>
         <div class="overlay1">
-          <div class="text1">
-            book  the best of the best hotels to spend time alone or with your friend
-          <button class="btn btn-info">Book</button>
+          <div class="text1">An entertainment company with lot's of cool stuff from Music Tents etc..
+            <button class="btn btn-info"> <a class="text-white" href="tel:0790964507"> Contact</a> </button>          
           </div>
         </div>
       </div>
