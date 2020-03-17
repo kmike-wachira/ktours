@@ -119,7 +119,9 @@
             <hr class="mb-5">
               <!--Grid column-->
               @endforeach
+              <div class= " container text-center">
              {{ $events->links() }}
+            </div>
             </div>
             <!--Grid row-->    
             <!--Pagination-->
