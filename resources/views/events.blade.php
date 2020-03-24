@@ -106,7 +106,7 @@
       <div class="container text-center">
         <div class="row">
             <div class=" col-md-12 col-lg-3 ">
-                <button type="button" class="btn btn-outline-default waves-effect"><i class="fas fa-book pr-2" aria-hidden="true"></i>Book now</button>
+                <button type="button" class="btn btn-outline-default waves-effect" data-toggle="modal" data-target="#modalRegisterForm"><i class="fas fa-book pr-2" aria-hidden="true"></i>Book now</button>
             </div>
             <div class=" col-md-12 col-lg-3 ">
                 <button type="button" class="btn btn-outline-default waves-effect"><i class="fas fa-star pr-2" aria-hidden="true"></i>Intersted</button>

@@ -23,6 +23,7 @@
   <body>
 
   @include('layouts.navbar')
+  @include('layouts.book')
   @yield('body')
   @include('layouts.footer')
 

@@ -12,13 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::post('/post','bookings@store')->name('book');
 Route::get('/','EventsController@index');
 Route::get('/events/{id}','EventsController@show')->name('show');
 
-// Route::get('/events', function () {
-//     return view('events');
-// });
+Route::get('/about', function () {
+    return view('about');
+});
 Route::get('/contact', function () {
     return view('contact');
 });
