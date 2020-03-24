@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('/book','bookingController@store')->name('book');
-Route::get('/','EventsController@index');
+Route::redirect('booking','bookingController');
+Route::post('/bookevent','bookingController@store')->name('booknow');
+Route::get('/','EventsController@index')->name('home');
 Route::get('/events/{id}','EventsController@show')->name('show');
 Route::get('/bookevent/{id}','bookingController@show')->name('bookevent');
 
@@ -31,4 +32,4 @@ Route::get('/contact', function () {
 Route::get('/events','EventsController@allEvents')->name('allevents');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

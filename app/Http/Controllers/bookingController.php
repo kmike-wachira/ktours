@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\events,App\eventVenues,App\bookings;
+use App\newBooking;
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
@@ -42,7 +43,7 @@ class bookingController extends Controller
             'id'=>'required',
             'onarrival'=>'required'
         ]);
-        $booking = new bookings;
+        $booking = new newBooking();
         $user = auth()->user();
         $booking->booked_by='1';
         $booking->event_id=$request->id;
@@ -50,7 +51,7 @@ class bookingController extends Controller
         $booking->expected_people=$request->no_attending;
         $booking->payment=$request->onarrival;
         $booking->save();
-        return redirect(route('allevents'));
+        return redirect()->route('home');
     }
 
     /**

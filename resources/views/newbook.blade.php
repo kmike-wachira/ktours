@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('body')
 <div class="mtop container">
-<form class="form" action="{{ route('book')}}" method="POST">
+<form class="form" action="{{ route('booknow')}}" method="POST">
     @csrf
  <div class="modal-content">
    <div class="modal-header text-center">
