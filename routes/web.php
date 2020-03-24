@@ -12,9 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('/post','bookings@store')->name('book');
+Route::post('/book','bookingController@store')->name('book');
 Route::get('/','EventsController@index');
 Route::get('/events/{id}','EventsController@show')->name('show');
+Route::get('/bookevent/{id}','bookingController@show')->name('bookevent');
+
 
 Route::get('/about', function () {
     return view('about');
@@ -26,7 +28,7 @@ Route::get('/contact', function () {
 //     return view('welcome');
 // });
 
-Route::get('/events','EventsController@allEvents');
+Route::get('/events','EventsController@allEvents')->name('allevents');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

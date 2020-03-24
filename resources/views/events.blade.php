@@ -1,5 +1,12 @@
 @extends('layouts.main')
   @section('body')
+  @if($errors->any())
+  @foreach ($errors->all() as $item)
+<h4>{{$item}}</h4>
+      
+  @endforeach
+  @endif
+
     <div class="container" style="margin-top:100px">
       <div class="row">
         <div class="col-lg-6  col-md-6 col-sm-12">
@@ -106,8 +113,8 @@
       <div class="container text-center">
         <div class="row">
             <div class=" col-md-12 col-lg-3 ">
-                <button type="button" class="btn btn-outline-default waves-effect" data-toggle="modal" data-target="#modalRegisterForm"><i class="fas fa-book pr-2" aria-hidden="true"></i>Book now</button>
-            </div>
+                <a href="{{ route('bookevent',$event->id )}}" class="btn btn-outline-default waves-effect"><i class="fas fa-book pr-2" aria-hidden="true"></i>Book Now</a>
+              </div>
             <div class=" col-md-12 col-lg-3 ">
                 <button type="button" class="btn btn-outline-default waves-effect"><i class="fas fa-star pr-2" aria-hidden="true"></i>Intersted</button>
             </div>
@@ -117,6 +124,6 @@
             <div class=" col-md-12 col-lg-3 ">
                 <button type="button" class="btn btn-outline-default waves-effect"><i class="fas fa-star pr-2" aria-hidden="true"></i>Contact for more info</button>
             </div>
-          </div>
-    </div>
+          </div>     
+       </div>
   @endsection
