@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('booking','bookingController');
 Route::post('/bookevent','bookingController@store')->name('booknow');
 Route::get('/','EventsController@index')->name('home');
 Route::get('/events/{id}','EventsController@show')->name('show');

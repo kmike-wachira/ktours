@@ -1,13 +1,10 @@
 @extends('layouts.main')
   @section('body')
-  @if($errors->any())
-  @foreach ($errors->all() as $item)
-<h4>{{$item}}</h4>
-      
-  @endforeach
-  @endif
-
+ 
     <div class="container" style="margin-top:100px">
+      @if (session('success'))
+        
+      @endif
       <div class="row">
         <div class="col-lg-6  col-md-6 col-sm-12">
               <!--Carousel Wrapper-->

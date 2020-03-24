@@ -7,6 +7,13 @@
    <div class="modal-header text-center">
    <h4 class="modal-title w-100 font-weight-bold">Book for {{$event->title}}</h4>
    </div>
+   @if($errors->any())
+   @foreach ($errors->all() as $item)
+    <h4>{{$item}}</h4>
+       
+   @endforeach
+   @endif
+ 
    <div class="modal-body mx-3">
      <div class="md-form mb-5">
        <i class="fas fa-user prefix grey-text"></i>
@@ -15,7 +22,7 @@
      </div>
      <div class="md-form mb-5">
        <i class="fas fa-dollar-sign prefix grey-text"></i>
-       <input type="text" id="orangeForm-email" name="price" value="{{$event->price}}" class="form-control validate" disabled>
+       <input type="text" id="orangeForm-email" name="price" value="{{$event->price}}" class="form-control validate" readonly>
        <label data-error="wrong" data-success="right" for="orangeForm-email">Prices</label>
      </div>
      <input type="text"  name="id" value="{{$event->id}}" class="form-control validate" style="display:none">

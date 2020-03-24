@@ -45,13 +45,13 @@ class bookingController extends Controller
         ]);
         $booking = new newBooking();
         $user = auth()->user();
-        $booking->booked_by='1';
+        $booking->booked_by=$user->id;
         $booking->event_id=$request->id;
         $booking->price=$request->price;
         $booking->expected_people=$request->no_attending;
         $booking->payment=$request->onarrival;
         $booking->save();
-        return redirect()->route('home');
+        return redirect()->route('show');
     }
 
     /**
