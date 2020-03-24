@@ -19,6 +19,14 @@
   <link rel="stylesheet" href="{{ asset('styling/css/mdb.min.css') }}">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="{{ asset('styling/css/style.css') }}">
+  <meta property="og:site_name" content="The freeCodeCamp Forum" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://discourse-user-assets.s3.dualstack.us-east-1.amazonaws.com/original/3X/2/0/206c254cf9e405bcddf6caea7f882dca146dcd3c.png" />
+  <meta property="og:image" content="https://discourse-user-assets.s3.dualstack.us-east-1.amazonaws.com/original/3X/2/0/206c254cf9e405bcddf6caea7f882dca146dcd3c.png" />
+  <meta property="og:url" content="https://www.freecodecamp.org/forum/t/typeerror-cannot-read-property-0-of-undefined/257636/7" />
+  <meta name="twitter:url" content="https://www.freecodecamp.org/forum/t/typeerror-cannot-read-property-0-of-undefined/257636/7" />
+  <meta property="og:title" content="TypeError: Cannot read property &#39;0&#39; of undefined" />
+  <meta name="twitter:title" content="TypeError: Cannot read property &#39;0&#39; of undefined" />
   </head>
   <body>
 

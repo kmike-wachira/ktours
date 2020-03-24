@@ -2,9 +2,6 @@
   @section('body')
  
     <div class="container" style="margin-top:100px">
-      @if (session('success'))
-        
-      @endif
       <div class="row">
         <div class="col-lg-6  col-md-6 col-sm-12">
               <!--Carousel Wrapper-->
@@ -89,6 +86,11 @@
           </div>
         </div>
       </div>
+      @if (session('success'))
+      <div class="alert alert-success container" role="alert">
+        {{session('success')}}
+      </div>
+      @endif
       <div class="container mt-5">
         <h1>What the event contains.</h1>
         <div>

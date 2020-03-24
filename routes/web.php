@@ -16,7 +16,7 @@ Route::post('/bookevent','bookingController@store')->name('booknow');
 Route::get('/','EventsController@index')->name('home');
 Route::get('/events/{id}','EventsController@show')->name('show');
 Route::get('/bookevent/{id}','bookingController@show')->name('bookevent');
-
+Route::get('/profile','bookingController@me');
 
 Route::get('/about', function () {
     return view('about');

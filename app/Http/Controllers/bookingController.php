@@ -18,6 +18,9 @@ class bookingController extends Controller
     {
         //
     }
+    public function me(){
+        return view('profile');
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -51,7 +54,7 @@ class bookingController extends Controller
         $booking->expected_people=$request->no_attending;
         $booking->payment=$request->onarrival;
         $booking->save();
-        return redirect()->route('show');
+        return redirect()->route('show',$request->id)->with('success',"event booked succcesfully");
     }
 
     /**
